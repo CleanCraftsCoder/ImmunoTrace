@@ -1,26 +1,30 @@
+# 🧬 ImmunoTrace
 
-# ImmunoTrace
+**ImmunoTrace** is an AI-powered personal health memory platform built for people who fall sick frequently — seasonal sufferers, elderly patients, and those with recurring illnesses. Users upload their past prescriptions, which are processed via OCR to extract doctor details, diagnoses, medicines, and dosage.
 
-A healthcare dashboard and prescription tracking app built with React, Vite, Supabase, and AI-powered OCR.
+![TypeScript](https://img.shields.io/badge/TypeScript-91.8%25-blue)
+![JavaScript](https://img.shields.io/badge/JavaScript-4.3%25-yellow)
+![CSS](https://img.shields.io/badge/CSS-2.7%25-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
 
-## Running the code
+---
 
-1. Run `npm install` to install dependencies.
-2. Create a `.env` file with your Supabase keys:
+## ✨ Features
 
-```env
-VITE_SUPABASE_URL=https://your-project.supabase.co
-VITE_SUPABASE_ANON_KEY=your-anon-key
-VITE_API_URL=http://localhost:3003
-```
+- 📄 **Prescription OCR** – Upload images of past prescriptions, and AI extracts key medical data.
+- 🧠 **Health Memory** – Build a chronological history of diagnoses, medicines, and doctors.
+- 👨‍⚕️ **Doctor & Medicine Tracking** – Easily recall past treatments and recurring prescriptions.
+- 📅 **Schedule View** – Organize and review health events over time.
+- 🔐 **Secure Authentication** – Powered by Supabase Auth.
+- ⚡ **Fast & Modern UI** – Built with React + Vite and styled with Shadcn/ui.
 
-3. Open `supabase_setup.sql` and run it in the Supabase SQL Editor to create the required tables and policies.
-4. In Supabase Storage, create a public bucket named `prescription-images`.
-5. Start the app with `npm run dev`.
+---
 
-## Supabase setup notes
+## 🚀 Quick Start
 
-- The app expects `users`, `prescriptions`, and `schedule` tables in the `public` schema.
-- If a REST call returns `404 Not Found`, the most common cause is that the table has not been created yet.
-- Use `supabase_setup.sql` to create the tables before signing in or uploading prescriptions.
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/CleanCraftsCoder/ImmunoTrace.git
+cd ImmunoTrace
   
